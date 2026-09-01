@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "My blog"
+title: "Portfolio"
+author: "Sola Corrado"
+description: "Neuroscience and Computer Science"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
