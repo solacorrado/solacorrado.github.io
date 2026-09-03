@@ -19,7 +19,7 @@ show_minimal: false             # remove all clutter
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "about.md", title: "About", sidebaricon: home}
-  - {file: "experiences.md", title: "Experience", sidebaricon: address-card}
+  - {file: "experience.md", title: "Experience", sidebaricon: address-card}
   - {file: "projects.md", title: "Projects", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
