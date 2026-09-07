@@ -20,7 +20,7 @@ show_minimal: false             # remove all clutter
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "bio.html", title: "Bio", sidebaricon: home}
   - {file: "experience.html", title: "Experience", sidebaricon: address-card}
-  - {file: "projects.html", title: "Projects", sidebaricon: address-card}
+  - {file: "postarchive.html", title: "Projects", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:sola.corrado@duke.edu"}
