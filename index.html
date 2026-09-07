@@ -3,15 +3,105 @@ layout: default
 title: "Home"
 ---
 
-{% if site.show_excerpts %}
-  {% for post in site.posts %}
-    <article>
-      {% include meta.html post=post %}
-      {{ post.excerpt }}
-      <footer class="button"><a href="{{ post.url | relative_url }}">read more</a></footer>
-    </article>
-  {% endfor %}
-{% else %}
-  {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
-  {{ source | split: "---" | last }}
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<style>
+  :root {
+    --ink: #1C1C1A;
+    --rule: #DDD9D0;
+    --accent: #8F7366;
+    --paper: #F1EDE6;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Times New Roman";
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 32px 96px;
+  }
+
+  h1.title {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 0 0 48px;
+  }
+ 
+  p.subtitle {
+    font-size: rem;
+    font-style: italic;
+    color: var(--ink);
+    margin: 0 0 40px;
+  }
+
+  .intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    flex-direction: row-reverse;
+  }
+ 
+  .headshot {
+    flex: 0 0 180px;
+    width: 180px;
+    height: 240px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+  }
+ 
+  .bio {
+    flex: 1;
+    min-width: 0;
+    color: var(--ink);
+    font-size: 1rem;
+  }
+ 
+  @media (max-width: 520px) {
+    .intro {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .headshot {
+      flex-basis: auto;
+      width: 160px;
+      height: 213px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1 class="name">Your Name</h1>
+  <p class="subtitle">Neuroscience & Computer Science senior at Duke University"</p>
+ 
+  <div class="intro">
+    <img class="headshot" src="images/headshot.jpg" alt="Sola Corrado Headshot">
+    <div class="bio">
+      <p>
+        I am a senior undergraduate student at Duke University double majoring in neuroscience and computer science. 
+        I am particularly interested in how advancing technologies can be used to analyze and model neuroscientific data to help us better understand the mechanisms of the brain.
+        As a member of the Imagination and Modal Cognition Lab at Duke, I am working on a project for my senior thesis uncovering factors that influence the percieved plausibility of episodic counterfactual thoughts through functional connectivity analyses. 
+        My long term goals are to continue using computer science as a tool to develop brain-computer interfaces that can help patients.
+      </p>
+    </div>
+  </div>
+ 
+</div>
+</body>
+</html>

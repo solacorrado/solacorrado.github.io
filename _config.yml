@@ -18,8 +18,8 @@ show_minimal: false             # remove all clutter
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "about.md", title: "About", sidebaricon: home}
-  - {file: "experience.md", title: "Experience", sidebaricon: address-card}
+  - {file: "bio.html", title: "Bio", sidebaricon: home}
+  - {file: "experience.html", title: "Experience", sidebaricon: address-card}
   - {file: "projects.md", title: "Projects", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}

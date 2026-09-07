@@ -4,6 +4,7 @@ permalink: "/about/"
 layout: page
 ---
 
+
 ## Education
 **Duke University**
 **Bachelor of Science; Double Major in Neuroscience and Computer Science, Minor in Philosophy**
