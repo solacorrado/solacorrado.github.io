@@ -24,8 +24,8 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:sola.corrado@duke.edu"}
-  - {title: GitHub, icon: github, url: "https://github.com/solacorrado"}
-  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/solacorrado/"}
+  - {title: GitHub, icon: github, url: "https://github.com/solacorrado", target: "_blank"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/solacorrado/", target: "_blank"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
