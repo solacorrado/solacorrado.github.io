@@ -1,5 +1,9 @@
 <header>
   <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
-  {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-  {% if include.post.date %}<time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>{% endif %}
+  {% if include.post.description %}<p class="post-caption">{{ include.post.description }}</p>{% endif %}
+  {% if include.post.start_date %}
+    <div class="post-date">
+      {{ include.post.start_date }}{% if include.post.end_date %} &ndash; {{ include.post.end_date }}{% endif %}
+    </div>
+  {% endif %}
 </header>
