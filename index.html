@@ -16,6 +16,22 @@ title: "Home"
       </p>
     </div>
   </div>
+
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid featured-grid">
+      {% assign featured = site.posts | where: "featured", true | slice: 0, 3 %}
+      {% for post in featured %}
+        <a class="project-card" href="{{ post.url | relative_url }}">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
+          <h3>{{ post.title }}</h3>
+        </a>
+      {% endfor %}
+    </div>
+    <a class="view-all" href="{{ '/projects/' | relative_url }}">View all projects →</a>
+  </section>
  
 </div>
 </body>

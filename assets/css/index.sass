@@ -142,9 +142,9 @@ p.subtitle
   flex-direction: row-reverse
 
 .headshot
-  flex: 0 0 180px
-  width: 180px
-  height: 240px
+  flex: 0 0 240px
+  width: 240px
+  height: 320px
   border-radius: 8px
   object-fit: cover
   border: 1px solid var(--rule)
@@ -154,6 +154,24 @@ p.subtitle
   min-width: 0
   color: var(--ink)
   font-size: 1rem
+
+.featured-projects
+  margin-top: 6rem
+  text-align: center
+
+  h2
+    margin-bottom: 2rem
+
+  .view-all
+    display: inline-block
+    margin-top: 2rem
+
+.featured-grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 24px
+
+  .project-card
+    text-align: left
 
 header.hover.smooth
   background-color: var(--accent)
