@@ -20,7 +20,7 @@ Zero-shot accuracy across participants for EEG decoding image classification usi
 
 ### My Contributions
 - Replicated the results of Gifford et al. (2022) using the AlexNet model and recorded runtimes to compare time complexity
-- Implemented a custom-built CLIP - CNN decoding pipeline with AI-assisted coding that reverses the original direction of information (encoding to decoding) with early stopping that improved the runtime of the training by up to 200 times
+- Implemented a custom-built CLIP - CNN decoding pipeline with AI-assisted coding that reverses the original direction of information (encoding to decoding) and trained across participants with early stopping and improved the overall runtime of the training by 88%.
 - Conducted hyperparameter tuning on dropout rate, batch size, and learning rate and found the model with the highest similarity score between predicted and actual CLIP feature map and achieved a Top-1 accuracy of 7.5% and Top-10 accuracy of 36.5%
 
 ### Future Directions
